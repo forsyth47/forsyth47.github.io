@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Machiato';
+    src: url('/assets/fonts/Machiato.ttf') format('truetype');
+  }
+  
+@font-face {
+    font-family: 'ROSSELA';
+    src: url('/assets/fonts/ROSSELA.otf') format('opentype');
+}
+
+:root {
+    --color1: #fff;
+    --color2: #000;
+    --color3: #000;
+    --color4: #000;
+    --neon1:#000;
+    --neon2:#000;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: "Space Grotesk",Helvetica,sans-serif;
+    font-weight: 500;
+    color: var(--color4);
+}
+
+header {
+    margin-left: 15px;
+    font-family: Machiato;
+    font-size: 75px;
+    color: #fff;
+    text-shadow: 0 0 10px var(--neon1),
+                0 0 20px var(--color1),
+                0 0 50px var(--neon1);
+    background: linear-gradient(90deg, var(--neon1), var(--neon2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    padding: 20px;
+}
+
+.quicknav {
+    font-family: ROSSELA;
+    color: var(--color3);
+    font-size: 17px;
+    text-align: end;
+    font-weight: bolder;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-shadow: 0 0 10px var(--neon1),
+                0 0 20px var(--color1),
+                0 0 50px var(--neon1);
+}
+
+a {
+    color: blueviolet;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.header-hr {
+    border: none;
+    height: 3px;
+    background-color: #fff;
+    margin: 0px 0;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px var(--neon1),
+                0 0 20px var(--neon1),
+                0 0 50px var(--color4); */
+    background: linear-gradient(90deg, var(--neon1), var(--neon1));
+  }
+  
+.container {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.navbar {
+    flex: 1;
+    background-color: #00000032;
+    padding: 15px;
+    border-radius: 10px;
+    align-self:baseline
+  }
+  
+.main {
+    flex: 2;
+    background-color: #00000032;
+    padding: 20px; /* Adds padding */
+    border-radius: 10px; /* Adds border radius */
+}
+  
+.other {
+    flex: 1;
+    background-color: #00000032;
+    padding: 15px; /* Adds padding */
+    border-radius: 10px; /* Adds border radius */
+    align-self:baseline
+}
+
+
+
+/* ------------------------------------------------------- */
+
+
+.pfpimg {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.intro-heading {
+    font-family: ROSSELA;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.intro-text, .webguide-text {
+    font-family: ROSSELA;
+    
+}
+
+.webguide-heading {
+    font-family: ROSSELA;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 0 0 10px var(--neon1),
+                0 0 20px var(--color1),
+                0 0 50px var(--neon1);
+}
+
+.itsminimal {
+    font-family: ROSSELA;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#chatbox {
+    float: right;
+}
