@@ -8,18 +8,20 @@
     src: url('/assets/fonts/ROSSELA.otf') format('opentype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
 :root {
-    --color1: #fff;
-    --color2: #000;
-    --color3: #000;
-    --color4: #000;
-    --neon1:#000;
-    --neon2:#000;
+    --color1: #FFF7D4;
+    --color2: #FFD95A;
+    --color3: #C07F00;
+    --color4: #4C3D3D;
+    --neon1:var(--color4);
+    --neon2:var(--color1);
 }
 
 body {
     background-color: var(--color1);
-    font-family: "Space Grotesk",Helvetica,sans-serif;
+    font-family: ROSSELA;
     font-weight: 500;
     color: var(--color4);
 }
@@ -41,21 +43,37 @@ footer {
     padding: 20px;
 }
 
+.header-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.notification-bar {
+    flex-grow: 1;
+    font-family: ROSSELA;
+    color: var(--color3);
+    font-size: 17px;
+    font-weight: bolder;
+    margin-right: 10px;
+    margin-top: 8px; 
+
+}
+
 .quicknav {
     font-family: ROSSELA;
     color: var(--color3);
     font-size: 17px;
     text-align: end;
     font-weight: bolder;
+    margin-left: 7px;
     margin-right: 10px;
-    margin-top: 20px;
     text-shadow: 0 0 10px var(--neon1),
                 0 0 20px var(--color1),
                 0 0 50px var(--neon1);
 }
 
 a {
-    color: blueviolet;
+    color: var(--color4);
     text-decoration: underline;
     font-weight: bold;
 }
@@ -74,34 +92,34 @@ a {
   
 .container {
     display: flex;
-    margin-left: 10px;
+    /* margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
     gap: 15px;
 }
 
 .navbar {
     flex: 1;
-    background-color: #00000032;
+    /* background-color: #00000032; */
     padding: 15px;
     border-radius: 10px;
-    align-self:baseline
+    align-self: flex-start;
   }
   
 .main {
     flex: 2;
-    background-color: #00000032;
+    background-color: rgba(var(--color2), 0.8);
     padding: 20px; /* Adds padding */
     border-radius: 10px; /* Adds border radius */
 }
   
 .other {
     flex: 1;
-    background-color: #00000032;
+    /* background-color: #00000032; */
     padding: 15px; /* Adds padding */
     border-radius: 10px; /* Adds border radius */
-    align-self:baseline
+    align-self: flex-start;
 }
 
 
@@ -141,6 +159,33 @@ a {
     font-weight: bold;
 }
 
-#chatbox {
-    float: right;
+.container-main-container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
 }
+
+.chatbox {
+    flex: 1;
+}
+
+.favmovies {
+    flex: 1;
+}
+
+.imageposter {
+    flex: 1;
+    
+}
+
+/* ------------------------------------------------------- */
+
+
+/* ------------------------------------------------------- */
+
+
+/* ------------------------------------------------------- */
+
+
+/* ------------------------------------------------------- */
